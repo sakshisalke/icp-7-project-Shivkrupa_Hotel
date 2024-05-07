@@ -1,0 +1,29 @@
+.navbar{
+background: #EFEFBB;  
+background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);  
+background: linear-gradient(to right, #D4D3DD, #EFEFBB); 
+padding: 1px;
+margin: 20px;
+border-radius: 10px;
+}
+
+.logo-img{
+    height: 80px;
+    border-radius: 20px;
+}
+.login-img{
+    height: 60px;
+}
+.login-img:hover{
+    background-color: #fff;
+    border-radius: 50%;
+}
+.container-1 {
+    width: 97%;
+    background: #EFEFBB;  
+    background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);  
+    background: linear-gradient(to right, #D4D3DD, #EFEFBB); 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: block;
+    margin: 10px auto;
+}
