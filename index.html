@@ -54,10 +54,10 @@
     <div class="card d-block container-1 mb-4" style="width: 95%; margin: 20px auto;">
         <img src="./img/hotel-img/hotel7.jpg" class="card-img-top" alt="..." id="image-slider" style="height: 600px;">
         <div class="card-body justify-content-center d-block" style="margin: auto;">
-            <input type="radio" name="img" onclick="changeImages('./img/hotel-img/hotel7.jpg')" />
-            <input type="radio" name="img" onclick="changeImages('./img/hotel-img/hotel2.jpg')" />
-            <input type="radio" name="img" onclick="changeImages('./img/hotel-img/hotel9.webp')" />
-            <input type="radio" name="img" onclick="changeImages('./img/hotel-img/hotel3.jpg')" />
+            <input type="radio" class="radio-button" name="img" onclick="changeImages('./img/hotel-img/hotel7.jpg')" />
+            <input type="radio" class="radio-button" name="img" onclick="changeImages('./img/hotel-img/hotel2.jpg')" />
+            <input type="radio" class="radio-button" name="img" onclick="changeImages('./img/hotel-img/hotel9.webp')" />
+            <input type="radio" class="radio-button" name="img" onclick="changeImages('./img/hotel-img/hotel3.jpg')" />
         </div>
     </div>
     <hr>
@@ -79,21 +79,21 @@
             <div class="col-sm-6 col-md-11 col-lg-6  mx-auto">
                 <form class="form">
                     <div class="mb-3 mt-5">
-                        <input type="text" class="form-control" id="cust-name"
+                        <input type="text" class="form-control border-primary" id="cust-name" 
                             placeholder="Enter Your Name" required />
                     </div>
 
                     <div class="mb-3">
-                        <input type="email" class="form-control" id="cust-email"
+                        <input type="email" class="form-control border-primary" id="cust-email"
                          placeholder="Enter Your Email" required />
                     </div>
 
                     <div class="mb-3">
-                        <textarea class="form-control" id="cust-review" rows="3"
+                        <textarea class="form-control border-primary" id="cust-review" rows="3"
                             placeholder="Enter Your Review" required ></textarea>
                     </div>
 
-                    <button type="submit" class="button  d-block mx-auto m-5 fs-4 "
+                    <button type="submit" class="btn button border-primary rounded d-block mx-auto m-5 fs-4 "
                         onclick="addReview()">Add Review</button>
                 </form>
             </div>
@@ -105,7 +105,7 @@
 
     <div class="row row-cols-1 row-cols-md-3 g-4" style="width: 97%; margin: 10px auto;">
         <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 container-1">
                 <img src="./img/logo/user-profile.png" class="card-img-top d-block" alt="..."
                     style="height: 80px; width: 80px; margin: 10px auto;">
                 <div class="card-body text-center">
@@ -121,13 +121,13 @@
         </div>
 
         <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 container-1">
                 <img src="./img/logo/user-profile.png" class="card-img-top d-block" alt="..."
                     style="height: 80px; width: 80px; margin: 10px auto;">
                 <div class="card-body text-center">
-                    <h5 class="card-title">Sneha Sable</h5>
+                    <h5 class="card-title">Krushna Tiwari</h5>
                     <p class="card-text">
-                        Thanks for providing best Quality Food. I also like your services.
+                        Your Best QWuality food makes us happy!! Also the place is very Peacefull.
                     </p>
 
                     <img src="./img/logo/review-star.gif" class="card-img-top d-block" alt="..."
@@ -137,7 +137,7 @@
         </div>
 
         <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 container-1">
                 <img src="./img/logo/user-profile.png" class="card-img-top d-block" alt="..."
                     style="height: 80px; width: 80px; margin: 10px auto;">
                 <div class="card-body text-center">

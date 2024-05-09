@@ -12,7 +12,7 @@ function submitReview() {
 
     }
     else {
-        alert(`${custName.value} your message send successfully!!!`)
+        alert(`${custName.value} your Review added successfully!!!`)
     }
 
 }
@@ -35,6 +35,7 @@ if(reviewFromLocalStorage)
     }
 
 function addReview() {
+    submitReview();
     custNameArray.push(custName.value);
     localStorage.setItem("custNameArray", JSON.stringify(custNameArray));
 
