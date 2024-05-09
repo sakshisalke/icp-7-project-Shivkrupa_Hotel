@@ -4,5 +4,6 @@ function changeImages(imageName){
 }
 
 function submitReview(){
-    alert("")
+    const custName= document.getElementById('cust-name').value;
+    alert(`${custName} your message send successfully!!!`)
 }
