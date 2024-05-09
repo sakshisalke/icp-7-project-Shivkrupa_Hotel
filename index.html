@@ -15,7 +15,8 @@
     <!-- Navbar -->
     <nav class="navbar bg-color navbar-expand-lg mb-5">
         <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html"><img src="./img/logo/hotel-logo" alt="Logo" class="logo-img"></a>
+            <a class="navbar-brand" href="./index.html"><img src="./img/logo/hotel-logo" alt="Logo"
+                    class="logo-img"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -49,7 +50,8 @@
 
     <!-- Body -->
 
-    <div class="card d-block container-1" style="width: 95%; margin: 20px auto;">
+    <!-- Slider -->
+    <div class="card d-block container-1 mb-4" style="width: 95%; margin: 20px auto;">
         <img src="./img/hotel-img/hotel7.jpg" class="card-img-top" alt="..." id="image-slider" style="height: 600px;">
         <div class="card-body justify-content-center d-block" style="margin: auto;">
             <input type="radio" name="img" onclick="changeImages('./img/hotel-img/hotel7.jpg')" />
@@ -58,6 +60,100 @@
             <input type="radio" name="img" onclick="changeImages('./img/hotel-img/hotel3.jpg')" />
         </div>
     </div>
+    <hr>
+
+    <!-- heading -->
+    <h1 class="h2 text-center pt-4" style="color: #000066;">Stay once, Carry memories forever</h1>
+    <p class="text-center p-3" style="color: #45443F; font-size: 18px;">
+        It provides pure <b>vegeterian food</b>.
+        It is at Pune-Nagar Road, Saradwadi, which makes it easy for first-time visitors in locating this establishment.
+        It is known to provide top services which makes customers more satisfy.
+        It also provides home delivery of fresh food.
+    </p>
+
+    <!-- card -->
+    <h1 class="h2 text-center pt-4" style="color: #000066;">Words From Our Customers</h1>
+
+    <div class="container-1 rounded mx-auto" style="width: 95%;">
+        <div class="row">
+            <div class="col-sm-6 col-md-11 col-lg-6  mx-auto">
+                <form class="form">
+                    <div class="mb-3 mt-5">
+                        <input type="text" class="form-control border-success" id="cust-name"
+                            placeholder="Enter Your Name" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="email" class="form-control border-success" id="cust-email"
+                         placeholder="Enter Your Email" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <textarea class="form-control border-success" id="cust-review" rows="3"
+                            placeholder="Enter Your Review" required ></textarea>
+                    </div>
+
+                    <button type="submit" class="button  d-block mx-auto m-5 fs-4 bg-success"
+                        onclick="submitReview()">Send Review</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+    <div class="row row-cols-1 row-cols-md-3 g-4" style="width: 97%; margin: 10px auto;">
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/logo/user-profile.png" class="card-img-top d-block" alt="..."
+                    style="height: 80px; width: 80px; margin: 10px auto;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Sneha Sable</h5>
+                    <p class="card-text">
+                        Thanks for providing best Quality Food. I also like your services.
+                    </p>
+
+                    <img src="./img/logo/review-star.gif" class="card-img-top d-block" alt="..."
+                        style="height: 80px; width: 80px; margin: 10px auto;">
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/logo/user-profile.png" class="card-img-top d-block" alt="..."
+                    style="height: 80px; width: 80px; margin: 10px auto;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Sneha Sable</h5>
+                    <p class="card-text">
+                        Thanks for providing best Quality Food. I also like your services.
+                    </p>
+
+                    <img src="./img/logo/review-star.gif" class="card-img-top d-block" alt="..."
+                        style="height: 80px; width: 80px; margin: 10px auto;">
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/logo/user-profile.png" class="card-img-top d-block" alt="..."
+                    style="height: 80px; width: 80px; margin: 10px auto;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Sneha Sable</h5>
+                    <p class="card-text">
+                        Thanks for providing best Quality Food. I also like your services.
+                    </p>
+
+                    <img src="./img/logo/review-star.gif" class="card-img-top d-block" alt="..."
+                        style="height: 80px; width: 80px; margin: 10px auto;">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 
     <!-- Footer -->
     <footer class="container-1 bg-color cbg-light text-dark pt-5 pb-4 footer-shadow mt-4 d-block">
