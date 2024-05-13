@@ -1,0 +1,15 @@
+.card-body{
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.list-item{
+    font-size: 22px;
+    color: #fff;
+    background-color: #cc8800;
+    border-radius: 10px;
+    padding: 9px 18px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+    border: 1px solid #d4d2d2;
+    margin: 15px;
+}

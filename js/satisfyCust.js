@@ -25,8 +25,8 @@ let custList=[];
 
             for(const listItem of custList)
             {
-                listCustomer.innerHTML += `<div class="todo-item">
-                    <input type= "checkbox" class="check-box"/>
+                listCustomer.innerHTML += `<div class="list-item">
+                    <input type= "checkbox" />
                     ${listItem}</div>`
             }
         }
@@ -34,4 +34,4 @@ let custList=[];
         function remove(){
             localStorage.clear(custList);
         }
-        setTimeout(remove, 2000);
+        setTimeout(remove, 86400000);
