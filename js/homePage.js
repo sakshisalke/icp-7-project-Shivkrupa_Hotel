@@ -1,8 +1,10 @@
+//Slider 
 function changeImages(imageName) {
     const prodImage = document.getElementById('image-slider');
     prodImage.src = imageName;
 }
 
+// Reveiw
 const custEmail = document.getElementById('cust-email');
 const custReview = document.getElementById('cust-review');
 const custName = document.getElementById('cust-name');
@@ -65,5 +67,14 @@ function render() {
         cardCustMsg.innerHTML = custMsgElement;
     }
 
+}
+
+
+// Dark-Light-Mode
+function dakrLightMode(image){
+    const themeImage= document.getElementById('theme-img');
+    themeImage.src= image;
+    const bodyElement= document.getElementById('body');
+    bodyElement.className = "dark-mode";
 }
 

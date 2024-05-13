@@ -10,7 +10,7 @@
     <title>Homepage</title>
 </head>
 
-<body class="bg-body-tertiary">
+<body class="bg-body-tertiary" id="body">
 
     <!-- Navbar -->
     <nav class="navbar bg-color navbar-expand-lg mb-5">
@@ -47,7 +47,10 @@
                     </li>
                 </ul>
             </div>
-            <a href="#"><img src="./img/logo/login.png" alt="login-img" class="login-img m-2"></a>
+            
+                <img src="./img/logo/dark-mode.png" alt="Theme-Image" class="login-img m-2"
+                    onclick="dakrLightMode('./img/logo/light-mode.png')" id="theme-img">
+           
         </div>
     </nav>
 
@@ -66,8 +69,8 @@
     <hr>
 
     <!-- heading -->
-    <h1 class="h2 text-center pt-4" style="color: #000066;">Stay once, Carry memories forever</h1>
-    <p class="text-center p-3" style="color: #45443F; font-size: 18px;">
+    <h1 class="h2 main-heading text-center pt-4">Stay once, Carry memories forever</h1>
+    <p class="text-center p-3" id="heading1" style="color: #45443F; font-size: 18px;">
         It provides pure <b>vegeterian food</b>.
         It is at Pune-Nagar Road, Saradwadi, which makes it easy for first-time visitors in locating this establishment.
         It is known to provide top services which makes customers more satisfy.
@@ -75,28 +78,29 @@
     </p>
 
     <!-- card -->
-    <h1 class="h2 text-center pt-4" style="color: #000066;">Words From Our Customers</h1>
+    <h1 class="h2 main-heading text-center pt-4">Words From Our Customers</h1>
 
-    <div class="container-1 box rounded mx-auto" style="width: 95%;">
+    <div class="container-1 bg-body-tertiary box rounded mx-auto" style="width: 95%;">
         <div class="row">
             <div class="col-sm-6 col-md-11 col-lg-6  mx-auto">
                 <form class="form">
                     <div class="mb-3 mt-5">
-                        <input type="text" class="form-control border-primary" id="cust-name" 
+                        <input type="text" class="form-control border-primary" id="cust-name"
                             placeholder="Enter Your Name" required />
                     </div>
 
                     <div class="mb-3">
                         <input type="email" class="form-control border-primary" id="cust-email"
-                         placeholder="Enter Your Email" required />
+                            placeholder="Enter Your Email" required />
                     </div>
 
                     <div class="mb-3">
                         <textarea class="form-control border-primary" id="cust-review" rows="3"
-                            placeholder="Enter Your Review" required ></textarea>
+                            placeholder="Enter Your Review" required></textarea>
                     </div>
 
-                    <button type="submit" class="btn1 button fw-semibold p-2 border-primary rounded d-block mx-auto m-5 fs-4 "
+                    <button type="submit"
+                        class="btn1 button fw-semibold p-2 border-primary rounded d-block mx-auto m-5 fs-4 "
                         onclick="addReview()">Add Review</button>
                 </form>
             </div>
