@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/snacks.css">
+    <link rel="stylesheet" href="../css/satisfyCust.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>About-Us</title>
 </head>
@@ -46,8 +46,19 @@
 
       <!-- Body -->
       <h1 class="h2 text-center pt-4" style="color: #000066;">Today's Satisfied Customers</h1>
-      
+      <div class="card container-1" style="width: 80%;">
+        <img src="../img/other-img/satisfy-cust.png" class="card-img-top" alt="satisfy-cust" width="70px">
+        <div class="card-body list-container" id="satisfy-cust-list">
 
+        </div>
+      </div>
+
+      <div class="input-group mb-3" style="width: 80%; margin: 10px auto;">
+        <input type="text" id="input-cust-name" class="form-control border-primary" placeholder="Customer Name" aria-label="Customer Name" aria-describedby="button-addon2">
+        <button class="btn btn1 p-2 border-primary" onclick="add()" type="button" id="button-addon2" style="font-size: 20px; width: 100px;">
+            Add
+        </button>
+      </div>
 
      
       <!-- Footer -->
@@ -138,5 +149,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../js/satisfyCust.js"></script>
 </body>
 </html>
