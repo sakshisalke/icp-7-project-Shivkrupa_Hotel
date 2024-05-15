@@ -36,6 +36,16 @@
                         <a class="nav-link fs-3 fw-semibold m-3" href="./pages/satisfyCust.html">Satisfy-Cust</a>
                     </li>
                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fs-3 fw-semibold m-3" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Theme
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item fs-5 fw-semibold" onclick="dakrMode()" style="cursor: pointer;">Dark</a></li>
+                            <li><a class="dropdown-item fs-5 fw-semibold" onclick="lightMode()" style="cursor: pointer;">Light</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle fs-3 fw-semibold m-3" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Category
@@ -48,8 +58,7 @@
                 </ul>
             </div>
             
-                <img src="./img/logo/dark-mode.png" alt="Theme-Image" class="login-img m-2"
-                    onclick="dakrLightMode('./img/logo/light-mode.png')" id="theme-img">
+                <img src="./img/logo/login.png" alt="Login-Image" class="login-img m-2">
            
         </div>
     </nav>
@@ -69,8 +78,8 @@
     <hr>
 
     <!-- heading -->
-    <h1 class="h2 main-heading text-center pt-4">Stay once, Carry memories forever</h1>
-    <p class="text-center p-3" id="heading1" style="color: #45443F; font-size: 18px;">
+    <h1 class="h2 main-heading text-center pt-4" id="heading">Stay once, Carry memories forever</h1>
+    <p class="text-center p-3" id="heading1" style="font-size: 18px;">
         It provides pure <b>vegeterian food</b>.
         It is at Pune-Nagar Road, Saradwadi, which makes it easy for first-time visitors in locating this establishment.
         It is known to provide top services which makes customers more satisfy.
@@ -78,7 +87,7 @@
     </p>
 
     <!-- card -->
-    <h1 class="h2 main-heading text-center pt-4">Words From Our Customers</h1>
+    <h1 class="h2 main-heading text-center pt-4" id="heading2">Words From Our Customers</h1>
 
     <div class="container-1 bg-body-tertiary box rounded mx-auto" style="width: 95%;">
         <div class="row">
