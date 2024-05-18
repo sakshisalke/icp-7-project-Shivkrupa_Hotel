@@ -34,4 +34,4 @@ let custList=[];
         function remove(){
             localStorage.clear(custList);
         }
-        setTimeout(remove, 86400);
+        setTimeout(remove, 3600);
