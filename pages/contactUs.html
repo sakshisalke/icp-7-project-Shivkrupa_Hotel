@@ -11,10 +11,12 @@
     <title>Contact-Us</title>
 </head>
 
-<body class="bg-body-tertiary">
-    <nav class="navbar navbar-expand-lg bg-color box">
+<body class="bg-body-tertiary" id="body">
+    <!-- Navbar -->
+    <nav class="navbar bg-color navbar-expand-lg mb-2">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="../img/logo/hotel-logo" alt="Logo" class="logo-img"></a>
+            <a class="navbar-brand" href="../index.html"><img src="../img/logo/hotel-logo" alt="Logo"
+                    class="logo-img"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -22,17 +24,34 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active fs-3 fw-semibold m-3" aria-current="page"
-                            href="../index.html">Home</a>
+                        <a class="nav-link fs-4 fw-semibold m-2" aria-current="page" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-3 fw-semibold m-3" href="../pages/aboutUs.html">About-Us</a>
+                        <a class="nav-link fs-4 fw-semibold m-2" href="../pages/updates.html">Updates</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-3 fw-semibold m-3" href="../pages/contactUs.html">Contact-Us</a>
+                        <a class="nav-link fs-4 fw-semibold m-2" href="../pages/aboutUs.html">About-Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-4 fw-semibold m-2" href="../pages/contactUs.html">Contact-Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-4 fw-semibold m-2" href="../pages/satisfyCust.html">Satisfy-Cust</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle fs-3 fw-semibold m-3" href="#" role="button"
+                        <a class="nav-link dropdown-toggle fs-4 fw-semibold m-2" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Theme
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item fs-5 fw-semibold" onclick="dakrMode()"
+                                    style="cursor: pointer;">Dark</a></li>
+                            <li><a class="dropdown-item fs-5 fw-semibold" onclick="lightMode()"
+                                    style="cursor: pointer;">Light</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fs-4 fw-semibold m-2" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Category
                         </a>
@@ -43,12 +62,15 @@
                     </li>
                 </ul>
             </div>
-            <a href="#"><img src="../img/logo/login.png" alt="login-img" class="login-img m-2"></a>
+
+            <img src="../img/logo/login.png" alt="Login-Image" class="login-img m-2">
+
         </div>
     </nav>
 
-    <h1 class="h1 text-center pt-4 main-heading">Contact-Us</h1>
-    <div class="container-1 rounded box mx-auto" style="width: 80%;">
+
+    <h1 class="h1 text-center pt-4 main-heading" id="heading">Contact-Us</h1>
+    <div class="container-1 rounded box mx-auto bg-body-tertiary" style="width: 80%;">
         <div class="row">
             <div class="col-sm-6 col-md-11 col-lg-6  mx-auto">
                 <form class="form">
@@ -72,8 +94,8 @@
 
 
                     <div class="mb-3">
-                        <textarea class="form-control border-primary" id="cust-msg" rows="3"
-                            placeholder="Enter Message" required></textarea>
+                        <textarea class="form-control border-primary" id="cust-msg" rows="3" placeholder="Enter Message"
+                            required></textarea>
                     </div>
 
                     <button type="submit"
@@ -84,47 +106,60 @@
         </div>
 
         <div class="details d-flex border-top mt-2 pt-3">
-        <div class="d-inline p-2" style="width: 40%;">
-        <h1 class="h2 text-center pt-4 main-heading">Keep In Touch</h1>
-            
-            <p class="text-center icon"><i class="fa-solid fa-location-dot"></i></p>
-            <h4 class="text-center">Address</h5>
-            <h6 class="text-center"><a href="#" style="text-decoration: none; color: #747373;">
-                Pune-Nagar Road, Saradwadi, Tal. Shirur,<br > Dist. Pune-412210
-            </a></h6>
+            <div class="d-inline p-2" style="width: 40%;">
+                <h1 class="h2 text-center pt-4 main-heading">Keep In Touch</h1>
 
-            <p class="text-center icon"><i class="fa-solid fa-phone"></i></p>
-            <h4 class="text-center">Phone</h5>
-            <h6 class="text-center margin"><a href="tel:+91 9145724878" style="text-decoration: none; color: #747373;">
-                +91 8805177102 <br />
-                +91 8208994696
-            </a></h6>
+                <p class="text-center icon"><i class="fa-solid fa-location-dot"></i></p>
+                <h4 class="text-center">Address</h5>
+                    <h6 class="text-center"><a href="#" style="text-decoration: none; color: #747373;">
+                            Pune-Nagar Road, Saradwadi, Tal. Shirur,<br> Dist. Pune-412210
+                        </a></h6>
 
-            <p class="text-center icon"><i class="fa-solid fa-envelope"></i></p>
-            <h4 class="text-center">Email</h5>
-            <h6 class="text-center margin"><a href="mailto:suraj@roadtocode.org" style="text-decoration: none; color: #747373;">
-                    shivkrupa9996@gmail.com
-            </a></h6>
+                    <p class="text-center icon"><i class="fa-solid fa-phone"></i></p>
+                    <h4 class="text-center">Phone</h5>
+                        <h6 class="text-center margin"><a href="tel:+91 9145724878"
+                                style="text-decoration: none; color: #747373;">
+                                +91 8805177102 <br />
+                                +91 8208994696
+                            </a></h6>
+
+                        <p class="text-center icon"><i class="fa-solid fa-envelope"></i></p>
+                        <h4 class="text-center">Email</h5>
+                            <h6 class="text-center margin"><a href="mailto:suraj@roadtocode.org"
+                                    style="text-decoration: none; color: #747373;">
+                                    shivkrupa9996@gmail.com
+                                </a></h6>
             </div>
 
             <div class="d-inline p-2" style="width: 60%;">
                 <h1 class="h2 text-center pt-4 main-heading">Find Us On Map</h1>
                 <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.0491347895963!2d78.99870237597126!3d21.110607184961143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4951a96eac98f%3A0xcb0a5687fb269529!2sLokmanya%20nagar%20metro%20station!5e0!3m2!1sen!2sin!4v1712824413224!5m2!1sen!2sin"
-                width="100%" height="500" class="rounded" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.0491347895963!2d78.99870237597126!3d21.110607184961143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4951a96eac98f%3A0xcb0a5687fb269529!2sLokmanya%20nagar%20metro%20station!5e0!3m2!1sen!2sin!4v1712824413224!5m2!1sen!2sin"
+                    width="100%" height="500" class="rounded" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
         </div>
     </div>
 
-    <footer class="container-1 cbg-light text-dark pt-5 pb-4 bg-color box footer-shadow mt-4">
-        <div class="ontainer text-center text-md-left">
+    <!-- Footer -->
+    <footer class="container-1 box bg-color cbg-light text-dark pt-5 pb-4 footer-shadow mt-4 d-block">
+        <div class="container text-center text-md-left">
             <div class="row text-center text-md-left">
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 fw-bold" style="color: #000066">Hotel Shivkrupa</h5>
-                    <p class="fw-semibold">Hotel Shivkrupa is established in 1999. It is a pure Veg Restaurant.<br>
+                    <p class="fw-semibold">Hotel Shivkrupa is established in 1999. It is a pure Veg Restaurant.
                         They provides best quality food.
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold" style="color:#000066">Other Branch</h5>
+                    <p class="fw-semibold">
+                        <a href="#" class="text-dark" style="text-decoration: none;">Hotel Sanjay</a>
+                    </p>
+                    <p class="fw-semibold">
+                        <a href="#" class="text-dark" style="text-decoration: none;">Hotel Shivkrupa & Snacks Center</a>
                     </p>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
@@ -137,45 +172,38 @@
                             style="text-decoration: none;">Contact-Us</a>
                     </p>
                     <p class="fw-semibold">
-                        <a href="#" class="text-dark" style="text-decoration: none;">SourceFiles</a>
+                        <a href="../pages/updates.html" class="text-dark" style="text-decoration: none;">Updates</a>
                     </p>
                     <p class="fw-semibold">
-                        <a href="#" class="text-dark" style="text-decoration: none;">Login</a>
-                    </p>
-                </div>
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 fw-bold" style="color:#000066">Other Branch</h5>
-                    <p class="fw-semibold">
-                        <a href="#" class="text-dark" style="text-decoration: none;">Hotel Sanjay</a>
-                    </p>
-                    <p class="fw-semibold">
-                        <a href="#" class="text-dark" style="text-decoration: none;">Hotel Shivkrupa & Snacks Center</a>
+                        <a href="../pages/satisfyCust.html" class="text-dark"
+                            style="text-decoration: none;">Satisfy-Cust</a>
                     </p>
                 </div>
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 fw-bold" style="color: #000066">Contact Us</h5>
                     <p class="fw-semibold">
 
-                        <i class="fas fa-home me-3"></i><a href="#"
-                            style="text-decoration: none; color: black;">Saradwadi, Shirur, Pune-412210</a>
+                        <a href="#" style="text-decoration: none; color: black;">Saradwadi, Shirur, Pune-412210
+                        </a>
                     </p>
                     <p class="fw-semibold">
-                        <i class="fas fa-envelope me-3"></i><a href="mailto:suraj@roadtocode.org"
-                            style="text-decoration: none; color: black;">shivkrupa9996@gmail.com</a>
+                        <a href="mailto:suraj@roadtocode.org"
+                            style="text-decoration: none; color: black;">shivkrupa9996@gmail.com
+                        </a>
                     </p>
                     <p class="fw-semibold">
-                        <i class="fas fa-phone me-3"></i><a href="tel:+91 9145724878"
-                            style="text-decoration: none; color: black;">+91 8805177102</a>
+                        <a href="tel:+91 9145724878" style="text-decoration: none; color: black;">+91 8805177102
+                        </a>
                     </p>
                     <p class="fw-semibold">
-                        <i class="fas fa-phone me-3"></i><a href="tel:+91 9145724878"
-                            style="text-decoration: none; color: black;">+91 8208994696</a>
+                        <a href="tel:+91 9145724878" style="text-decoration: none; color: black;">+91 8208994696
+                        </a>
                     </p>
                 </div>
                 <hr class="mb-4">
                 <div class="col-md-7 col-lg-8">
                     <p class="fw-semibold">Copyright ©2024 All rights reserved By:
-                        <a href="#" style="text-decoration: none;">
+                        <a href="../index.html" style="text-decoration: none;">
                             <strong style="color: #000066;">Hotel Shivkrupa</strong></a>.
                     </p>
                 </div>
@@ -183,15 +211,14 @@
                     <div class="text-center text-md-right">
                         <ul class="list-unstyled list-inline">
                             <li>
-                                <a class="btn btn-outline-dark btn-floating m-1"
+                                <a class="btn btn-floating"
                                     href="https://www.facebook.com/p/Hotel-Shivkrupa-Pure-Veg-Fast-Food-100076338603430/">
                                     <img src="../img/logo/facebook.png" alt="img" height="32">
                                 </a>
-                                <a class="btn btn-outline-dark btn-floating m-1" href="#">
+                                <a class="btn btn-floating" href="#">
                                     <img src="../img/logo/twitter.png" alt="" height="32">
                                 </a>
-                                <a class="btn btn-outline-dark btn-floating m-1"
-                                    href="https://www.instagram.com/p/Cgmerv4v67-/">
+                                <a class="btn btn-floating" href="https://www.instagram.com/p/Cgmerv4v67-/">
                                     <img src="../img/logo/instagram.png" alt="" height="32">
                                 </a>
 
@@ -212,6 +239,8 @@
         crossorigin="anonymous"></script>
 
     <script src="../js/contactUs.js"></script>
+    <script src="../js/common.js"></script>
+
 </body>
 
 </html>
